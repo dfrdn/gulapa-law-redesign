@@ -3,12 +3,7 @@
     <b-container class="d-none d-lg-block my-3">
       <b-row>
         <b-col class="text-center">
-          <img
-            id="logo-text"
-            src="~assets/images/logo-text.png"
-            alt="logo"
-            height="76px"
-          />
+          <img id="logo-text" src="~assets/images/logo-text.png" alt="logo" height="76px" />
         </b-col>
       </b-row>
     </b-container>
@@ -19,15 +14,11 @@
       :class="{ 'sticky-navbar': isSticky }"
     >
       <b-container>
-        <!-- <transition name="fade">
+        <transition name="fade">
           <b-navbar-brand v-show="isSticky" to="/">
-            <img
-              src="~assets/images/logo-figure.png"
-              alt="logo"
-              height="40px"
-            />
+            <img id="logo-figure" src="~assets/images/logo-figure.png" alt="logo" height="40px" />
           </b-navbar-brand>
-        </transition> -->
+        </transition>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,13 +40,12 @@
               :key="link.label"
               class="nav-item nav-link"
               :to="link.link"
-              >{{ link.label }}</nuxt-link
-            >
+            >{{ link.label }}</nuxt-link>
           </div>
         </div>
-        <!-- <transition name="fade"> -->
-        <!-- <b-button v-if="isSticky">Consult Us</b-button> -->
-        <!-- </transition> -->
+        <transition name="fade">
+          <b-button v-show="isSticky">Consult Us</b-button>
+        </transition>
       </b-container>
     </b-navbar>
   </div>
@@ -106,22 +96,12 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
-}
-
 .navbar-nav {
-  transition: flex 0.5s ease;
+  transition: flex 0.3s ease;
 }
 
 a {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .spacer {
@@ -137,16 +117,37 @@ a {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   max-width: 1200px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .sticky-navbar {
-  max-width: 100%;
+  max-width: none;
+  width: 100%;
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   z-index: 1030;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar-light .navbar-brand,
+.btn-secondary {
+  /* transition-delay: 0.3s; */
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+#logo-figure {
+  margin-left: -2px;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transition-delay: 0;
+  transform: translateX(10px);
+  opacity: 0;
 }
 </style>
