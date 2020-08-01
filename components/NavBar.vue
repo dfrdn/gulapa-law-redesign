@@ -18,8 +18,16 @@
       class="bg-white mx-auto floating-navbar"
       :class="{ 'sticky-navbar': isSticky }"
     >
-      <!-- <a class="navbar-brand d-lg-none" href="#"> </a> -->
       <b-container>
+        <!-- <transition name="fade">
+          <b-navbar-brand v-show="isSticky" to="/">
+            <img
+              src="~assets/images/logo-figure.png"
+              alt="logo"
+              height="40px"
+            />
+          </b-navbar-brand>
+        </transition> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -45,6 +53,9 @@
             >
           </div>
         </div>
+        <!-- <transition name="fade"> -->
+        <!-- <b-button v-if="isSticky">Consult Us</b-button> -->
+        <!-- </transition> -->
       </b-container>
     </b-navbar>
   </div>
@@ -59,6 +70,12 @@ export default Vue.extend({
     return {
       links: [
         { label: 'G-Law', link: '/' },
+        { label: 'Who We Are', link: '/about' },
+        { label: 'Our Practice Areas', link: '/practice-areas' },
+        { label: 'The Lawyers', link: '/lawyers' },
+        { label: 'Gains and Recognitions', link: '/awards' },
+      ],
+      stickyLinks: [
         { label: 'Who We Are', link: '/about' },
         { label: 'Our Practice Areas', link: '/practice-areas' },
         { label: 'The Lawyers', link: '/lawyers' },
@@ -89,8 +106,27 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
 .navbar-nav {
+  transition: flex 0.5s ease;
+}
+
+a {
   transition: all 0.5s ease;
+}
+
+.spacer {
+  height: 130px;
+  /* background: black; */
 }
 
 .floating-navbar {
@@ -102,10 +138,6 @@ export default Vue.extend({
   font-weight: 600;
   max-width: 1200px;
   transition: all 0.5s ease;
-}
-
-.floating-navbar:hover {
-  max-width: 100%;
 }
 
 .sticky-navbar {

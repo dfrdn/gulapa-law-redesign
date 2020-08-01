@@ -1,7 +1,9 @@
 <template>
   <div>
     <header id="header">
-      <div class="container"></div>
+      <b-container>
+        header
+      </b-container>
     </header>
     <section id="featured">
       featured
@@ -27,8 +29,12 @@ import Vue from 'vue'
 export default Vue.extend({})
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   min-height: 100vh;
+}
+
+#header {
+  background: url('~assets/images/gulapa-mtg-room_img.png');
 }
 </style>
