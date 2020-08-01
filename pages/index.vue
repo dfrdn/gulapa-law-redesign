@@ -58,10 +58,8 @@ footer {
 #header {
   background: url('~assets/images/gulapa-mtg-room_img.png');
   margin-top: -180px;
-}
+  padding-top: 280px;
 
-#featured {
-  height: 2000px;
   background-size: auto 100%;
   background-repeat: no-repeat;
   scroll-snap-align: start;
@@ -75,5 +73,6 @@ footer {
 #featured {
   scroll-snap-align: start;
   min-height: 100vh;
+  background: $primary;
 }
 </style>

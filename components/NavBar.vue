@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="header">
     <b-container class="d-none d-lg-block my-3">
       <b-row>
         <b-col class="text-center">
@@ -55,7 +55,7 @@
           </div>
         </div>
         <transition name="fade">
-          <b-button v-show="isSticky">Consult Us</b-button>
+          <b-button v-show="isSticky" variant="primary">Consult Us</b-button>
         </transition>
       </b-container>
     </b-navbar>
@@ -96,7 +96,7 @@ export default Vue.extend({
   methods: {
     handleScroll() {
       this.scrollPosition = window.scrollY
-      if (this.scrollPosition >= 100) {
+      if (this.scrollPosition >= 130) {
         this.isSticky = true
       } else {
         this.isSticky = false
@@ -107,6 +107,10 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+#header {
+  height: 150px;
+}
+
 .navbar-nav {
   transition: flex 0.3s ease;
 }
@@ -116,7 +120,7 @@ a {
 }
 
 .spacer {
-  height: 130px;
+  height: 140px;
   /* background: black; */
 }
 
@@ -132,7 +136,7 @@ a {
 }
 
 .sticky-navbar {
-  max-width: none;
+  max-width: 100%;
   width: 100%;
   position: fixed;
   top: 0;
