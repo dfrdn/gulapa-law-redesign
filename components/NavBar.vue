@@ -54,7 +54,7 @@
           </div>
         </div>
         <!-- <transition name="fade"> -->
-        <!-- <b-button v-if="isSticky">Consult Us</b-button> -->
+        <b-button v-if="isSticky" variant="primary">Consult Us</b-button>
         <!-- </transition> -->
       </b-container>
     </b-navbar>

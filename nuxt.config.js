@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/scss/custom.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -43,7 +43,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/style-resources'],
   /*
    ** Nuxt.js modules
    */
@@ -53,6 +53,19 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
   ],
+  rules: [
+    {
+      test: /\.s[ac]ss$/i,
+      use: ['style-loader', 'css-loader', 'sass-loader'],
+    },
+  ],
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false,
+  },
+  styleResources: {
+    scss: ['~/assets/scss/customVariables.scss'],
+  },
   /*
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
