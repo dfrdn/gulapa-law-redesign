@@ -3,7 +3,12 @@
     <b-container class="d-none d-lg-block my-3">
       <b-row>
         <b-col class="text-center">
-          <img id="logo-text" src="~assets/images/logo-text.png" alt="logo" height="76px" />
+          <img
+            id="logo-text"
+            src="~assets/images/logo-text.png"
+            alt="logo"
+            height="76px"
+          />
         </b-col>
       </b-row>
     </b-container>
@@ -16,7 +21,12 @@
       <b-container>
         <transition name="fade">
           <b-navbar-brand v-show="isSticky" to="/">
-            <img id="logo-figure" src="~assets/images/logo-figure.png" alt="logo" height="40px" />
+            <img
+              id="logo-figure"
+              src="~assets/images/logo-figure.png"
+              alt="logo"
+              height="40px"
+            />
           </b-navbar-brand>
         </transition>
         <button
@@ -40,7 +50,8 @@
               :key="link.label"
               class="nav-item nav-link"
               :to="link.link"
-            >{{ link.label }}</nuxt-link>
+              >{{ link.label }}</nuxt-link
+            >
           </div>
         </div>
         <transition name="fade">
