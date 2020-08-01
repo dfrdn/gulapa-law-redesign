@@ -20,7 +20,7 @@
     >
       <b-container>
         <transition name="fade">
-          <b-navbar-brand v-show="isSticky" to="/">
+          <b-navbar-brand :class="{ 'd-none': !isSticky }" to="/">
             <img
               id="logo-figure"
               src="~assets/images/logo-figure.png"
@@ -48,14 +48,16 @@
             <nuxt-link
               v-for="link in links"
               :key="link.label"
-              class="nav-item nav-link"
+              class="nav-item nav-link mx-3"
               :to="link.link"
               >{{ link.label }}</nuxt-link
             >
           </div>
         </div>
         <transition name="fade">
-          <b-button v-show="isSticky" variant="primary">Consult Us</b-button>
+          <b-button :class="{ 'd-none': !isSticky }" variant="primary"
+            >Consult Us</b-button
+          >
         </transition>
       </b-container>
     </b-navbar>
