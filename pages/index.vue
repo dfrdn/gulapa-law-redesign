@@ -3,11 +3,15 @@
     <header id="header">
       <b-container fluid>
         <b-row align-h="center" align-v="center">
-          <b-col class="mx-2 px-0"><hr /></b-col>
+          <b-col class="mx-2 px-0">
+            <hr />
+          </b-col>
           <b-col class="col-auto text-center mx-2 px-0">
             <h1>Innovate, Achieve, and Excel with Us</h1>
           </b-col>
-          <b-col class="mx-2 px-0"><hr /></b-col>
+          <b-col class="mx-2 px-0">
+            <hr />
+          </b-col>
         </b-row>
         <b-row>
           <b-col class="text-center">
@@ -21,7 +25,7 @@
         </b-row>
         <b-row>
           <b-col class="text-center">
-            <img class="img-fluid" src="~assets/images/header_img.png" alt="" />
+            <img class="img-fluid" src="~assets/images/header_img.png" alt />
           </b-col>
         </b-row>
       </b-container>
@@ -42,18 +46,12 @@
               and Vietnam, ‎2006-2008); and SyCip Salazar Hernandez & Gatmaitan
               ‎(2003-2006).
             </section-details>
-            <span class="pl-lg-5"
-              ><g-button variant="accent" :more="true"
-                >Learn More</g-button
-              ></span
-            >
+            <span class="pl-lg-5">
+              <g-button variant="accent" :more="true">Learn More</g-button>
+            </span>
           </b-col>
           <b-col>
-            <img
-              class="img-fluid"
-              src="~/assets/images/who-we-are.png"
-              alt=""
-            />
+            <img class="img-fluid" src="~/assets/images/who-we-are.png" alt />
           </b-col>
         </b-row>
         <b-row>
@@ -76,11 +74,11 @@
               Gulapa Law is dedicated in serving different clients across vast
               varieties of practice areas.
             </section-details>
-            <span class="pl-lg-5"
-              ><g-button variant="primary" :more="true"
+            <span class="pl-lg-5">
+              <g-button variant="primary" :more="true"
                 >See all practice areas</g-button
-              ></span
-            >
+              >
+            </span>
           </b-col>
           <b-col>
             <b-row>
@@ -101,7 +99,70 @@
         </b-row>
       </b-container>
     </section>
-    <section id="lawyers">lawyers</section>
+    <section id="projects">
+      <b-container>
+        <b-row>
+          <b-row>Projects</b-row>
+        </b-row>
+      </b-container>
+    </section>
+    <section id="lawyers">
+      <b-container>
+        <b-row align-v="end">
+          <b-col>
+            <section-title
+              heading="Our Lawyers"
+              subheading="Led by two of the most outstanding lawyers in the field"
+              variant="secondary"
+            ></section-title>
+            <div id="aris-profile" class="my-4">
+              <nuxt-link to="/"
+                ><button class="profile px-3 py-2 my-3">
+                  Aris L. Gulapa
+                </button></nuxt-link
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+                facilis nesciunt porro nihil! Alias itaque et libero corporis
+                neque nihil nulla perferendis laboriosam consectetur? A ipsa
+                veniam corrupti eius illo.
+              </p>
+              <b-row align-h="around">
+                <b-col>aris.gulapa@gulapalaw.com</b-col>
+                <b-col>numbernumber</b-col>
+              </b-row>
+            </div>
+            <div id="charms-profile" class="my-4">
+              <nuxt-link to="/"
+                ><button class="profile px-3 py-2 my-3">
+                  Charmaine Haw
+                </button></nuxt-link
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+                facilis nesciunt porro nihil! Alias itaque et libero corporis
+                neque nihil nulla perferendis laboriosam consectetur? A ipsa
+                veniam corrupti eius illo.
+              </p>
+              <b-row align-h="around">
+                <b-col>charms.haw@gulapalaw.com</b-col>
+                <b-col>numbernumber</b-col>
+              </b-row>
+            </div>
+            <g-button variant="primary" :more="true"
+              >See all our lawyers</g-button
+            >
+          </b-col>
+          <b-col>
+            <img
+              src="~assets/images/aris-landing_img.png"
+              alt="Aris Gulapa"
+              class="img-fluid profile"
+            />
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
     <section id="awards">awards</section>
   </div>
 </template>
@@ -200,6 +261,29 @@ footer {
 }
 
 #about {
+  background: $primary;
+}
+
+#projects {
+  background: $primary;
+}
+
+#lawyers {
+  button.profile {
+    text-transform: uppercase;
+    color: $primary;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    background: transparent linear-gradient(180deg, white 0%, #fafafa 100%) 0%
+      0%;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+  }
+}
+
+#awards {
   background: $primary;
 }
 </style>
