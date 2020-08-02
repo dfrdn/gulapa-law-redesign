@@ -2,7 +2,7 @@
   <footer id="footer-wrap">
     <section id="pre-footer">
       <b-container>
-        <b-row class="text-center">
+        <b-row class="text-center text-lg-left">
           <b-col class="connect col-12 col-md col-lg-3">
             <h3 class="mb-4">Connect with Us</h3>
             <ul class="p-0">
@@ -84,7 +84,7 @@ export default Vue.extend({})
   background: $primary;
 
   h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: $accent;
     text-transform: uppercase;
@@ -95,11 +95,13 @@ export default Vue.extend({})
   }
 
   span {
+    font-size: 14px;
     color: white;
   }
 }
 
 .g-law {
+  font-size: 12px;
   color: $secondary;
 }
 
