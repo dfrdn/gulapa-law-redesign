@@ -66,17 +66,20 @@ export default Vue.extend({
     }
     h2 {
       color: $accent;
-      text-decoration: none;
     }
     p {
       color: white;
       overflow: hidden;
       max-width: 20ch;
-      text-decoration: none;
     }
 
     background: $primary;
   }
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }
 
 .sm {

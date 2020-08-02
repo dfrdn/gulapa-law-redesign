@@ -20,7 +20,11 @@
     >
       <b-container>
         <transition name="fade">
-          <b-navbar-brand :class="{ 'd-lg-none': !isSticky }" to="/">
+          <b-navbar-brand
+            class="order-1 order-lg-0"
+            :class="{ 'd-lg-none': !isSticky }"
+            to="/"
+          >
             <img
               id="logo-figure"
               src="~assets/images/logo-figure.png"
@@ -29,20 +33,16 @@
             />
           </b-navbar-brand>
         </transition>
-        <button
-          class="navbar-toggler"
+        <b-navbar-toggle
+          class="order-0 order-lg-1"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          target="nav-collapse"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
-          <div
-            class="navbar-nav justify-content-around px-5"
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </b-navbar-toggle>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav
+            class="justify-content-around px-5 order-2"
             :class="{ 'flex-lg-grow-1': !isSticky }"
           >
             <nuxt-link v-if="!isSticky" class="nav-item nav-link mx-3" to="/"
@@ -56,10 +56,13 @@
               :to="link.link"
               >{{ link.label }}</nuxt-link
             >
-          </div>
-        </div>
+          </b-navbar-nav>
+        </b-collapse>
         <transition name="fade">
-          <b-button :class="{ 'd-lg-none': !isSticky }" variant="primary"
+          <b-button
+            class="d-none d-lg-block"
+            :class="{ 'd-lg-none': !isSticky && isHome }"
+            variant="primary"
             >Consult Us</b-button
           >
         </transition>
@@ -92,6 +95,11 @@ export default Vue.extend({
       stickyClass: 'is_sticky',
       scrollPosition: 0,
     }
+  },
+  computed: {
+    isHome() {
+      return this.$nuxt.$route.name === 'index'
+    },
   },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)

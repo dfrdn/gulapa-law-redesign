@@ -167,6 +167,44 @@
       </b-container>
     </section>
     <section id="awards">awards</section>
+    <section id="contact-us">
+      <b-container>
+        <b-row>
+          <b-col cols="12" lg="8">
+            <section-title
+              heading="Get In Touch"
+              subheading="Law is a complicated matter. Please fill out this quick form to help us help you."
+              variant="secondary"
+            ></section-title>
+            <b-row-form>
+              <b-form-input class="my-2" placeholder="Name"></b-form-input>
+              <b-form-input
+                class="my-2"
+                placeholder="Email Address"
+              ></b-form-input>
+              <b-form-textarea
+                no-resize=""
+                class="my-2"
+                rows="4"
+                placeholder="Message"
+              ></b-form-textarea>
+              <g-button variant="primary">Submit</g-button>
+            </b-row-form>
+          </b-col>
+          <b-col cols="12" lg="4">
+            <div id="contacts">
+              <h4>Connect with us</h4>
+              <p><i class="fas fa-envelope mx-2"></i>glaw@gulapalaw.com</p>
+              <p><i class="fas fa-phone mx-2"></i>+632 7960 2845 to 47</p>
+            </div>
+            <div id="address">
+              <h4>Manila Address</h4>
+              <p>addres</p>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
   </div>
 </template>
 
