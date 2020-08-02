@@ -1,5 +1,5 @@
 <template>
-  <section id="featured">
+  <section id="lawyers">
     <LawyerCards />
   </section>
 </template>
