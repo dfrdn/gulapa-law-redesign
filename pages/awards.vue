@@ -49,7 +49,7 @@
               </div>
               <ul>
                 <li>Project Development & Project Finance, Notable Law Firm (2019)</li>
-                <li>Financial and Corporate, Notable Firm in (a) M&A; (b) Project Finance; and (c) Restructuring & Insolvency (2017)</li>
+                <li>Financial and Corporate, Notable Firm in (a) M & A; (b) Project Finance; and (c) Restructuring & Insolvency (2017)</li>
                 <li>Energy & Infrastructure Guide, Notable Law Firm (2016)</li>
               </ul>
             </div>
@@ -142,7 +142,7 @@ export default Vue.extend({})
 
 <style lang="scss" scoped>
 .headerBox {
-  padding: 7px;
+  padding: 5px 0 5px 15px;
   text-transform: uppercase;
 
   width: 100%;
