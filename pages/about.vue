@@ -31,6 +31,6 @@ export default Vue.extend({})
 .text-container {
   color: $secondary;
   font-size: 20px;
-  width: 1100px;
+  max-width: 1100px;
 }
 </style>
