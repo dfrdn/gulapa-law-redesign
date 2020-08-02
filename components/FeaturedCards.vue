@@ -14,6 +14,8 @@
           v-for="feature in features"
           :key="feature.heading"
           class="feature d-flex"
+          cols="12"
+          lg="4"
         >
           <b-row align-v="center" class="py-4">
             <b-col cols="4" class="text-center">
@@ -72,7 +74,7 @@ export default Vue.extend({
 .feature {
   background: white;
   box-shadow: 0px 3px 6px 0px #0000000f;
-  flex: 0 1 400px;
+  // flex: 0 1 400px;
 
   &:first-child {
     border-top-left-radius: 10px;
@@ -80,8 +82,12 @@ export default Vue.extend({
   }
 
   &:last-child {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  @media (max-width: 992px) {
+    border-radius: 10px;
   }
 }
 

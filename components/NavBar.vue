@@ -40,7 +40,7 @@
         >
           <!-- <span class="navbar-toggler-icon"></span> -->
         </b-navbar-toggle>
-        <b-collapse id="nav-collapse" is-nav>
+        <b-collapse id="nav-collapse" is-nav class="order-2 order-lg-0">
           <b-navbar-nav
             class="justify-content-around px-5 order-2"
             :class="{ 'flex-lg-grow-1': !isSticky }"
@@ -60,8 +60,8 @@
         </b-collapse>
         <transition name="fade">
           <b-button
-            class="d-none d-lg-block"
-            :class="{ 'd-lg-none': !isSticky && isHome }"
+            class="d-none"
+            :class="[!isSticky && isHome ? 'd-lg-none' : 'd-lg-block']"
             variant="primary"
             >Consult Us</b-button
           >
@@ -98,6 +98,7 @@ export default Vue.extend({
   },
   computed: {
     isHome() {
+      console.log(this.$nuxt.$route.name === 'index')
       return this.$nuxt.$route.name === 'index'
     },
   },
@@ -109,11 +110,19 @@ export default Vue.extend({
   },
   methods: {
     handleScroll() {
+      const width =
+        window.innerWidth > 0
+          ? window.innerWidth
+          : document.documentElement.clientWidth
       this.scrollPosition = window.scrollY
-      if (this.scrollPosition >= 130) {
+      if (width < 992) {
         this.isSticky = true
       } else {
-        this.isSticky = false
+        if (this.scrollPosition >= 130) {
+          this.isSticky = true
+        } else {
+          this.isSticky = false
+        }
       }
     },
   },
