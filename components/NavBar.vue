@@ -59,7 +59,9 @@
           </div>
         </div>
         <transition name="fade">
-          <b-button :class="{ 'd-lg-none': !isSticky }" variant="primary"
+          <b-button
+            :class="{ 'd-lg-none': !isSticky && isHome }"
+            variant="primary"
             >Consult Us</b-button
           >
         </transition>
@@ -92,6 +94,11 @@ export default Vue.extend({
       stickyClass: 'is_sticky',
       scrollPosition: 0,
     }
+  },
+  computed: {
+    isHome() {
+      return this.$nuxt.$route.name === 'index'
+    },
   },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
