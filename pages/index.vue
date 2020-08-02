@@ -2,7 +2,7 @@
   <div id="page">
     <header id="header">
       <b-container fluid>
-        <b-row align-content="center">
+        <b-row align-h="center" align-v="center">
           <b-col class="mx-2 px-0"><hr /></b-col>
           <b-col class="col-auto text-center mx-2 px-0">
             <h1>Innovate, Achieve, and Excel with Us</h1>
@@ -26,8 +26,12 @@
         </b-row>
       </b-container>
     </header>
-    <section id="featured">featured</section>
-    <section id="about">about</section>
+    <section id="featured">
+      <FeaturedCards />
+    </section>
+    <section id="about">
+      <SectionTitle />
+    </section>
     <section id="practice-areas">practice areas</section>
     <section id="lawyers">lawyers</section>
     <section id="awards">awards</section>
@@ -42,11 +46,12 @@ export default Vue.extend({})
 
 <style lang="scss" scoped>
 .container-fluid {
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 
 #page {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 header,
@@ -64,6 +69,10 @@ footer {
   background-repeat: no-repeat;
   scroll-snap-align: start;
 
+  h1 {
+    color: $primary;
+  }
+
   hr {
     border: 0;
     border-top: 3px solid $primary;
@@ -72,7 +81,8 @@ footer {
 
 #featured {
   scroll-snap-align: start;
-  min-height: 100vh;
-  background: $primary;
+  transform: translateY(-50%);
+  padding: 0;
+  // background: $primary;
 }
 </style>

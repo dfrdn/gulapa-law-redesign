@@ -20,7 +20,7 @@
     >
       <b-container>
         <transition name="fade">
-          <b-navbar-brand :class="{ 'd-none': !isSticky }" to="/">
+          <b-navbar-brand :class="{ 'd-lg-none': !isSticky }" to="/">
             <img
               id="logo-figure"
               src="~assets/images/logo-figure.png"
@@ -55,7 +55,7 @@
           </div>
         </div>
         <transition name="fade">
-          <b-button :class="{ 'd-none': !isSticky }" variant="primary"
+          <b-button :class="{ 'd-lg-none': !isSticky }" variant="primary"
             >Consult Us</b-button
           >
         </transition>
@@ -141,6 +141,7 @@ a {
   max-width: 100%;
   width: 100%;
   position: fixed;
+  border-radius: 0;
   top: 0;
   left: 0;
   right: 0;
