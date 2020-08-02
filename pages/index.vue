@@ -35,7 +35,7 @@
     </section>
     <section id="about">
       <b-container>
-        <b-row align-v="start">
+        <b-row cols="1" cols-lg="2" align-v="start">
           <b-col align-self="start">
             <section-title heading="Who We Are" subheading="blabla" />
             <section-details>
@@ -64,7 +64,7 @@
     <section id="practice-areas">
       <b-container>
         <b-row align-v="center">
-          <b-col cols="4">
+          <b-col cols="12" lg="4">
             <section-title
               heading="What We Do"
               subheading="Our Practice Areas"
@@ -128,8 +128,11 @@
                 veniam corrupti eius illo.
               </p>
               <b-row align-h="around">
-                <b-col>aris.gulapa@gulapalaw.com</b-col>
-                <b-col>numbernumber</b-col>
+                <b-col
+                  ><i class="fas fa-envelope mx-3"></i
+                  >aris.gulapa@gulapalaw.com</b-col
+                >
+                <b-col><i class="fas fa-phone"></i>numbernumber</b-col>
               </b-row>
             </div>
             <div id="charms-profile" class="my-4">
