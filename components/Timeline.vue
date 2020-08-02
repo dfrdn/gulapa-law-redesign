@@ -1,7 +1,15 @@
 <template>
   <div>
     <ol>
-      <li v-for="event in timelineEvents" :key="event.event"></li>
+      <li
+        v-for="event in timelineEvents"
+        :key="event.event"
+        class="text-center"
+      >
+        <div class="dot my-2"></div>
+        <div class="year my-1">{{ event.year }}</div>
+        <div class="event">{{ event.event }}</div>
+      </li>
     </ol>
   </div>
 </template>
@@ -28,11 +36,64 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.year {
-  color: $accent;
-}
+ol {
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  // background: black;
 
-.event {
-  color: white;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(50%);
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:first-child {
+      .year {
+        width: 58px;
+        line-height: 58px;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid #fff;
+      }
+      transform: translateY(-30px);
+      // align-self: start;
+    }
+
+    &:not(:first-child) {
+      .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid #fff;
+      }
+
+      transform: translateY(20px);
+    }
+
+    &:nth-of-type(even) {
+      flex-direction: column-reverse;
+    }
+
+    .year {
+      color: $accent;
+    }
+
+    .event {
+      color: white;
+      max-width: 18ch;
+    }
+  }
 }
 </style>
