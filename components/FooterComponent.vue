@@ -1,9 +1,9 @@
 <template>
   <footer id="footer-wrap">
     <section id="pre-footer">
-      <b-container class="pre-footer">
-        <b-row>
-          <b-col class="connect col-lg-3">
+      <b-container>
+        <b-row class="text-center">
+          <b-col class="connect col-12 col-md col-lg-3">
             <h3 class="mb-4">Connect with Us</h3>
             <ul class="p-0">
               <li class="my-3">
@@ -16,13 +16,13 @@
               </li>
             </ul>
           </b-col>
-          <b-col class="address col-lg-3">
+          <b-col class="address col-12 col-md col-lg-3">
             <h3 class="mb-4">Manila Address</h3>
-            <b-row>
+            <b-row class="justify-content-center">
               <b-col class="col-auto">
                 <img src="~assets/images/pin.svg" alt="pin" />
               </b-col>
-              <b-col class="px-0">
+              <b-col class="px-0 col-sm-4 col-md">
                 <span>
                   G-Law (Gulapa Law Office)
                   Unit 12-A, 12th Floor, Marco Polo Ortigas Manila
@@ -36,12 +36,12 @@
       </b-container>
     </section>
     <section id="footer">
-      <b-container class="pre-footer">
-        <b-row class="justify-content-between align-items-center">
-          <b-col class="col-auto">
+      <b-container>
+        <b-row class="text-center py-3 justify-content-md-between align-items-center">
+          <b-col class="col-12 col-md-auto mb-3 mb-md-0">
             <h6 class="g-law my-0">All Rights Reserved | Gulapa Law 2020</h6>
           </b-col>
-          <b-col class="col-auto">
+          <b-col class="col-12 col-md-auto">
             <ul class="social-icons my-0">
               <li>
                 <a href="https://www.facebook.com/Gulapa-Law-Office-156580428029762">
@@ -81,7 +81,6 @@ export default Vue.extend({})
 #pre-footer {
   margin-top: 50px;
   padding: 40px 0;
-  height: 250px;
   background: $primary;
 
   h3 {
@@ -98,10 +97,6 @@ export default Vue.extend({})
   span {
     color: white;
   }
-}
-
-#footer .row {
-  height: 65px;
 }
 
 .g-law {
