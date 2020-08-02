@@ -46,22 +46,22 @@ export default Vue.extend({
           email: '@gulapalaw.com',
         },
         {
-          img: require('~/assets/images/lawyers/1-Melissa.jpg'),
+          img: require('~/assets/images/lawyers/5-Caloy.jpg'),
           name: 'Melissa Chavez',
           email: 'melissa.chavez@gulapalaw.com',
         },
         {
-          img: require('~/assets/images/lawyers/2-Angel.jpg'),
+          img: require('~/assets/images/lawyers/6-Aileen.jpg'),
           name: 'Angel',
           email: '@gulapalaw.com',
         },
         {
-          img: require('~/assets/images/lawyers/3-Shwaid.jpg'),
+          img: require('~/assets/images/lawyers/7-Dake.jpg'),
           name: 'Shwaid',
           email: '@gulapalaw.com',
         },
         {
-          img: require('~/assets/images/lawyers/4-Yas.jpg'),
+          img: require('~/assets/images/lawyers/8-Phil.jpg'),
           name: 'Yas',
           email: '@gulapalaw.com',
         },
