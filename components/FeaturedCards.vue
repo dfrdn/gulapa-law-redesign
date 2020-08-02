@@ -1,7 +1,15 @@
 <template>
   <div>
     <b-container fluid="lg">
-      <b-row align-h="center">
+      <b-row>
+        <b-col>
+          <section-title
+            heading="Why Choose Us"
+            class="d-lg-none"
+          ></section-title>
+        </b-col>
+      </b-row>
+      <b-row id="features" align-h="center">
         <b-col
           v-for="feature in features"
           :key="feature.heading"
@@ -74,6 +82,12 @@ export default Vue.extend({
   &:last-child {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #features {
+    transform: translateY(-50%);
   }
 }
 </style>

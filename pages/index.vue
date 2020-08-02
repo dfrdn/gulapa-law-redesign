@@ -11,11 +11,11 @@
         </b-row>
         <b-row>
           <b-col class="text-center">
-            <p>
+            <p class="mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
               eligendi consectetur voluptatum, laborum ea harum quidem amet.
             </p>
-            <button class="btn btn-primary">Consult Now</button>
+            <g-button variant="primary">Consult Now</g-button>
             <button class="btn btn-outline-primary">Learn More</button>
           </b-col>
         </b-row>
@@ -30,7 +30,33 @@
       <FeaturedCards />
     </section>
     <section id="about">
-      <SectionTitle />
+      <b-container>
+        <b-row align-v="top">
+          <b-col align-self="top">
+            <SectionTitle heading="Who We Are" subheading="blabla" />
+            <section-details>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              vero consequuntur rerum inventore maxime facilis doloremque dolor,
+              quia beatae ab veritatis tempora reprehenderit nostrum mollitia
+              laborum expedita? Reiciendis, atque consequuntur. Corrupti
+              pariatur, doloremque dolor culpa numquam sit, minima facere natus
+              commodi voluptates eligendi error voluptatibus dolores praesentium
+              incidunt eveniet veritatis deleniti fugiat consequuntur ducimus
+              quidem! Maxime possimus eaque quasi dolore. Quaerat id enim
+              asperiores soluta hic quia ipsum, itaque temporibus fugit delectus
+              aut odio facilis quos, expedita, repellat quam nihil dolorum sit
+              dolore ab. Repellat voluptates iusto dolores tempore omnis.
+            </section-details>
+          </b-col>
+          <b-col>
+            <img
+              class="img-fluid"
+              src="~/assets/images/who-we-are.png"
+              alt=""
+            />
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
     <section id="practice-areas">practice areas</section>
     <section id="lawyers">lawyers</section>
@@ -45,10 +71,6 @@ export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
-.container-fluid {
-  // min-height: 100vh;
-}
-
 #page {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -71,18 +93,34 @@ footer {
 
   h1 {
     color: $primary;
+    font-weight: 600;
   }
 
   hr {
     border: 0;
     border-top: 3px solid $primary;
   }
+
+  p {
+    color: #544c4c;
+    font-size: 24px;
+    max-width: 756px;
+    // line-height: 30px;
+  }
 }
 
 #featured {
   scroll-snap-align: start;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
   padding: 0;
-  // background: $primary;
+  background: $primary;
+
+  @media (max-width: 992px) {
+    padding: 100px 0;
+  }
+}
+
+#about {
+  background: $primary;
 }
 </style>
