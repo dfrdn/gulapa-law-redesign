@@ -31,22 +31,22 @@
     </section>
     <section id="about">
       <b-container>
-        <b-row align-v="top">
-          <b-col align-self="top">
-            <SectionTitle heading="Who We Are" subheading="blabla" />
+        <b-row align-v="start">
+          <b-col align-self="start">
+            <section-title heading="Who We Are" subheading="blabla" />
             <section-details>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero consequuntur rerum inventore maxime facilis doloremque dolor,
-              quia beatae ab veritatis tempora reprehenderit nostrum mollitia
-              laborum expedita? Reiciendis, atque consequuntur. Corrupti
-              pariatur, doloremque dolor culpa numquam sit, minima facere natus
-              commodi voluptates eligendi error voluptatibus dolores praesentium
-              incidunt eveniet veritatis deleniti fugiat consequuntur ducimus
-              quidem! Maxime possimus eaque quasi dolore. Quaerat id enim
-              asperiores soluta hic quia ipsum, itaque temporibus fugit delectus
-              aut odio facilis quos, expedita, repellat quam nihil dolorum sit
-              dolore ab. Repellat voluptates iusto dolores tempore omnis.
+              Gulapa Law was established by Aris L. Gulapa in September 2015
+              after he left a Makati-based firm where he was a partner for four
+              years. Before this, Aris was an associate in Anderson Mori &
+              Tomotsune (Tokyo, ‎2008-2010); Kelvin Chia Partnership (Singapore
+              and Vietnam, ‎2006-2008); and SyCip Salazar Hernandez & Gatmaitan
+              ‎(2003-2006).
             </section-details>
+            <span class="pl-lg-5"
+              ><g-button variant="accent" :more="true"
+                >Learn More</g-button
+              ></span
+            >
           </b-col>
           <b-col>
             <img
@@ -54,6 +54,11 @@
               src="~/assets/images/who-we-are.png"
               alt=""
             />
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <timeline />
           </b-col>
         </b-row>
       </b-container>
