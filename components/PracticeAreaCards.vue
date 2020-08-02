@@ -7,7 +7,7 @@
           :key="practiceArea.description"
           class="practiceArea d-flex flex-column text-center px-4 mx-0 my-2 col-12 col-md-4"
         >
-          <!-- <img class="img-fluid" :src="practiceArea.icon" :alt="practiceArea.description" /> -->
+          <img class="img-fluid" :src="practiceArea.icon" :alt="practiceArea.description" />
           <h2>{{ practiceArea.description }}</h2>
         </b-col>
       </b-row>
