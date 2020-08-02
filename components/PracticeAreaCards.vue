@@ -5,10 +5,15 @@
         <b-col
           v-for="practiceArea in allPracticeAreas"
           :key="practiceArea.description"
-          class="practiceArea d-flex flex-column text-center px-4 mx-0 my-2 col-12 col-md-4"
+          class="d-flex flex-column justify-content-center align-items-center text-center mx-0 my-3 col-12 col-lg-4"
         >
-          <img class="img-fluid" :src="practiceArea.icon" :alt="practiceArea.description" />
-          <h2>{{ practiceArea.description }}</h2>
+          <div v-b-hover="handleHover" class="practiceArea d-flex flex-column align-items-center">
+            <h2 v-if="isHovered">HOVER</h2>
+            <div v-else>
+              <img :src="practiceArea.icon" :alt="practiceArea.description" height="80" />
+              <h2>{{ practiceArea.description }}</h2>
+            </div>
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -58,11 +63,50 @@ export default Vue.extend({
           icon: require('~/assets/images/practice-areas/innovation.svg'),
           description: 'Innovation & Competition',
         },
+        {
+          icon: require('~/assets/images/practice-areas/asean.svg'),
+          description: 'ASEAN Trade',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/newyork.svg'),
+          description: 'Doing Business in New York',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/data-privacy.svg'),
+          description: 'Data Privacy Act Compliance',
+        },
       ],
+      isHovered: false,
     }
+  },
+  methods: {
+    handleHover(hovered) {
+      this.isHovered = hovered
+    },
   },
 })
 </script>
 
 <style lang="scss" scoped>
+.practiceArea {
+  padding-top: 50px;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.16);
+
+  img {
+    margin-bottom: 40px;
+  }
+  h2 {
+    width: 150px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+
+// .practiceArea:hover {
+//   background: $primary;
+// }
 </style>
