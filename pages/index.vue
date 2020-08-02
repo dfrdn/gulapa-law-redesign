@@ -63,7 +63,44 @@
         </b-row>
       </b-container>
     </section>
-    <section id="practice-areas">practice areas</section>
+    <section id="practice-areas">
+      <b-container>
+        <b-row align-v="center">
+          <b-col cols="4">
+            <section-title
+              heading="What We Do"
+              subheading="Our Practice Areas"
+              variant="secondary"
+            />
+            <section-details variant="secondary">
+              Gulapa Law is dedicated in serving different clients across vast
+              varieties of practice areas.
+            </section-details>
+            <span class="pl-lg-5"
+              ><g-button variant="primary" :more="true"
+                >See all practice areas</g-button
+              ></span
+            >
+          </b-col>
+          <b-col>
+            <b-row>
+              <b-col
+                v-for="practiceArea in allPracticeAreas"
+                :key="practiceArea.description"
+                class="d-flex flex-column justify-content-center align-items-center text-center mx-0 my-3 col-12 col-lg-4"
+              >
+                <practice-area-card
+                  :title="practiceArea.title"
+                  :description="practiceArea.description"
+                  :icon="practiceArea.icon"
+                  size="sm"
+                ></practice-area-card>
+              </b-col>
+            </b-row>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
     <section id="lawyers">lawyers</section>
     <section id="awards">awards</section>
   </div>
@@ -72,7 +109,44 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      allPracticeAreas: [
+        {
+          icon: require('~/assets/images/practice-areas/corporate.svg'),
+          title: 'General Corporate',
+          description: 'General Corporate',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/structural.svg'),
+          title: 'Infrastructure',
+          description: 'Infrastructure',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/government.svg'),
+          title: 'Government Contracts',
+          description: 'Government Contracts',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/dispute.svg'),
+          title: 'Dispute Resolution',
+          description: 'Dispute Resolution',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/tax.svg'),
+          title: 'Tax',
+          description: 'Tax',
+        },
+        {
+          icon: require('~/assets/images/practice-areas/newyork.svg'),
+          title: 'Doing Business in New York',
+          description: 'Doing Business in New York',
+        },
+      ],
+    }
+  },
+})
 </script>
 
 <style lang="scss" scoped>

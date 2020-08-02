@@ -3,6 +3,7 @@
     <div
       v-b-hover="handleHover"
       class="practiceArea d-flex flex-column align-items-center"
+      :class="size"
     >
       <div v-if="isHovered" class="hovered text-left">
         <img :src="icon" alt="icon" height="30" />
@@ -25,6 +26,7 @@ export default Vue.extend({
     icon: { type: String, default: '' },
     description: { type: String, default: '' },
     title: { type: String, default: '' },
+    size: { type: String, default: '' },
   },
   data() {
     return {
@@ -75,5 +77,10 @@ export default Vue.extend({
 
     background: $primary;
   }
+}
+
+.sm {
+  width: 230px;
+  height: 230px;
 }
 </style>
