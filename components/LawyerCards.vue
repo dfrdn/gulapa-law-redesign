@@ -5,7 +5,7 @@
         <b-col
           v-for="lawyer in AllLawyers"
           :key="lawyer.name"
-          class="lawyer d-flex flex-column text-center px-2 mx-0 my-2 col-lg-3"
+          class="lawyer d-flex flex-column text-center px-2 mx-0 my-2 col col-lg-3"
         >
           <img class="img-fluid" :src="lawyer.img" :alt="lawyer.name" />
           <div class="nameCard">

@@ -21,3 +21,8 @@ h6 {
   font-family: $font-family-headings;
   color: $primary;
 }
+
+html {
+  scrollbar-width: thin;
+  // overflow-y: scroll;
+}
