@@ -45,8 +45,12 @@
             class="navbar-nav justify-content-around px-5"
             :class="{ 'flex-lg-grow-1': !isSticky }"
           >
+            <nuxt-link v-if="!isSticky" class="nav-item nav-link mx-3" to="/">
+              G-Law
+            </nuxt-link>
+
             <nuxt-link
-              v-for="link in links"
+              v-for="link in stickyLinks"
               :key="link.label"
               class="nav-item nav-link mx-3"
               :to="link.link"
@@ -108,7 +112,7 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #header {
   height: 150px;
 }
@@ -152,6 +156,10 @@ a {
 .navbar-light .navbar-brand,
 .btn-secondary {
   /* transition-delay: 0.3s; */
+}
+
+.nuxt-link-exact-active {
+  color: $accent !important;
 }
 
 .fade-enter-active,
