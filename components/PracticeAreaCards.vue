@@ -7,7 +7,7 @@
           :key="practiceArea.description"
           class="practiceArea d-flex flex-column text-center px-4 mx-0 my-2 col-12 col-md-4"
         >
-          <icon class="icon-fluid" :src="practiceArea.icon" :alt="practiceArea.description" />
+          <img class="img-fluid" :src="practiceArea.icon" :alt="practiceArea.description" />
           <h2>{{ practiceArea.description }}</h2>
         </b-col>
       </b-row>
@@ -47,15 +47,15 @@ export default Vue.extend({
           description: 'I-tech & Intellectual Property',
         },
         {
-          icon: require('~/assets/images/practice-areas/'),
+          icon: require('~/assets/images/practice-areas/hrm.svg'),
           description: 'Human Resources & Immigration',
         },
         {
-          icon: require('~/assets/images/practice-areas/'),
+          icon: require('~/assets/images/practice-areas/fem.svg'),
           description: 'Fashion, Entertainment, & Media (FEM)',
         },
         {
-          icon: require('~/assets/images/practice-areas/'),
+          icon: require('~/assets/images/practice-areas/innovation.svg'),
           description: 'Innovation & Competition',
         },
       ],
