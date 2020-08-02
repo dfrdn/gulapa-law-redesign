@@ -98,7 +98,6 @@ export default Vue.extend({
   },
   computed: {
     isHome() {
-      console.log(this.$nuxt.$route.name === 'index')
       return this.$nuxt.$route.name === 'index'
     },
   },
@@ -117,12 +116,10 @@ export default Vue.extend({
       this.scrollPosition = window.scrollY
       if (width < 992) {
         this.isSticky = true
+      } else if (this.scrollPosition >= 130) {
+        this.isSticky = true
       } else {
-        if (this.scrollPosition >= 130) {
-          this.isSticky = true
-        } else {
-          this.isSticky = false
-        }
+        this.isSticky = false
       }
     },
   },

@@ -30,7 +30,7 @@ export default Vue.extend({})
 <style lang="scss" scoped>
 .text-container {
   color: $secondary;
-  font-size: 20px;
-  width: 1100px;
+  font-size: 16px;
+  max-width: 1100px;
 }
 </style>
