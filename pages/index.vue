@@ -11,11 +11,11 @@
         </b-row>
         <b-row>
           <b-col class="text-center">
-            <p>
+            <p class="mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
               eligendi consectetur voluptatum, laborum ea harum quidem amet.
             </p>
-            <button class="btn btn-primary">Consult Now</button>
+            <g-button variant="primary">Consult Now</g-button>
             <button class="btn btn-outline-primary">Learn More</button>
           </b-col>
         </b-row>

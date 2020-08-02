@@ -3,7 +3,12 @@
     <b-container class="d-none d-lg-block my-3">
       <b-row>
         <b-col class="text-center">
-          <img id="logo-text" src="~assets/images/logo-text.png" alt="logo" height="76px" />
+          <img
+            id="logo-text"
+            src="~assets/images/logo-text.png"
+            alt="logo"
+            height="76px"
+          />
         </b-col>
       </b-row>
     </b-container>
@@ -16,7 +21,12 @@
       <b-container>
         <transition name="fade">
           <b-navbar-brand :class="{ 'd-lg-none': !isSticky }" to="/">
-            <img id="logo-figure" src="~assets/images/logo-figure.png" alt="logo" height="40px" />
+            <img
+              id="logo-figure"
+              src="~assets/images/logo-figure.png"
+              alt="logo"
+              height="40px"
+            />
           </b-navbar-brand>
         </transition>
         <button
@@ -35,18 +45,23 @@
             class="navbar-nav justify-content-around px-5"
             :class="{ 'flex-lg-grow-1': !isSticky }"
           >
-            <nuxt-link v-if="!isSticky" class="nav-item nav-link mx-3" to="/">G-Law</nuxt-link>
+            <nuxt-link v-if="!isSticky" class="nav-item nav-link mx-3" to="/"
+              >G-Law</nuxt-link
+            >
 
             <nuxt-link
               v-for="link in stickyLinks"
               :key="link.label"
               class="nav-item nav-link mx-3"
               :to="link.link"
-            >{{ link.label }}</nuxt-link>
+              >{{ link.label }}</nuxt-link
+            >
           </div>
         </div>
         <transition name="fade">
-          <b-button :class="{ 'd-lg-none': !isSticky }" variant="primary">Consult Us</b-button>
+          <b-button :class="{ 'd-lg-none': !isSticky }" variant="primary"
+            >Consult Us</b-button
+          >
         </transition>
       </b-container>
     </b-navbar>
