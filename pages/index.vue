@@ -188,9 +188,11 @@
           </b-col>
           <b-col>
             <img
-              src="~assets/images/aris-landing_img.png"
+              src="~assets/images/gulapa-and-charms.png"
               alt="Aris Gulapa"
-              class="img-fluid profile"
+              height="600"
+              class="img-fluid profile d-none d-lg-block"
+              style="margin-bottom: -100px;"
             />
           </b-col>
         </b-row>
@@ -366,6 +368,7 @@ footer {
   @media (max-width: 992px) {
     padding-top: 180px;
     padding-bottom: 0;
+    margin-bottom: -20px;
   }
 
   background-size: auto 100%;
@@ -391,6 +394,8 @@ footer {
 }
 
 #featured {
+  position: relative;
+  z-index: 100;
   scroll-snap-align: start;
   padding: 0;
   background: $primary;
