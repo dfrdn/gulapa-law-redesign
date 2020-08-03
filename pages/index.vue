@@ -151,7 +151,7 @@
               variant="secondary"
             ></section-title>
             <div id="aris-profile" class="my-4">
-              <nuxt-link to="/">
+              <nuxt-link to="/lawyers/aris">
                 <button class="profile px-3 py-2 my-3">Aris L. Gulapa</button>
               </nuxt-link>
               <p>
@@ -168,7 +168,7 @@
               </b-row>
             </div>
             <div id="charms-profile" class="my-4">
-              <nuxt-link to="/">
+              <nuxt-link to="/lawyers/charms">
                 <button class="profile px-3 py-2 my-3">Charmaine Haw</button>
               </nuxt-link>
               <p>
