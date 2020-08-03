@@ -38,6 +38,7 @@ ol {
   list-style-type: none;
   display: flex;
   align-items: baseline;
+  padding: 0;
   @media (max-width: 992px) {
     flex-direction: column;
     justify-content: baseline;

@@ -57,7 +57,7 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col>
+          <b-col class="d-flex justify-content-center mt-5">
             <timeline />
           </b-col>
         </b-row>
