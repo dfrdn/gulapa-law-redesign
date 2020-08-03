@@ -19,8 +19,14 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
               eligendi consectetur voluptatum, laborum ea harum quidem amet.
             </p>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col class="text-center">
             <g-button variant="primary">Consult Us</g-button>
-            <button class="btn btn-outline-primary">Learn More</button>
+            <b-button variant="outline-primary" href="#about">
+              Learn More
+            </b-button>
           </b-col>
         </b-row>
         <b-row>
@@ -168,7 +174,13 @@
         </b-row>
       </b-container>
     </section>
-    <section id="awards">awards</section>
+    <section id="awards">
+      <b-container>
+        <b-row>
+          <b-col></b-col>
+        </b-row>
+      </b-container>
+    </section>
     <section id="contact-us">
       <b-container>
         <b-row>
@@ -270,11 +282,14 @@ footer {
 
 #header {
   background: url('~assets/images/gulapa-mtg-room_img.png');
+  // background-color: black;
   margin-top: -180px;
   padding-top: 280px;
+  padding-bottom: 80px;
 
   @media (max-width: 992px) {
     padding-top: 120px;
+    padding-bottom: 0;
   }
 
   background-size: auto 100%;
@@ -301,12 +316,11 @@ footer {
 
 #featured {
   scroll-snap-align: start;
-  // transform: translateY(-50%);
   padding: 0;
   background: $primary;
 
   @media (max-width: 992px) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 
