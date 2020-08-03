@@ -1,5 +1,5 @@
 <template>
-  <div id="pageTitle" class="my-5 text-center">
+  <div id="pageTitle" class="my-4 my-lg-5 text-center">
     <h3 :class="[variant]">{{ heading }}</h3>
     <hr class="my-0 py-0" :class="[variant]" />
     <h2 :class="[variant]">{{ subheading }}</h2>

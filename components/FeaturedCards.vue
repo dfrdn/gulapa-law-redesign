@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container fluid="lg">
+    <b-container>
       <b-row>
         <b-col>
           <section-title
@@ -88,6 +88,7 @@ export default Vue.extend({
 
   @media (max-width: 992px) {
     border-radius: 10px;
+    margin: 10px 10px;
   }
 }
 

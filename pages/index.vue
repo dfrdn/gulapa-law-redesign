@@ -19,8 +19,12 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
               eligendi consectetur voluptatum, laborum ea harum quidem amet.
             </p>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col class="text-center">
             <g-button variant="primary">Consult Us</g-button>
-            <button class="btn btn-outline-primary">Learn More</button>
+            <b-button variant="outline-primary" href="#about">Learn More</b-button>
           </b-col>
         </b-row>
         <b-row>
@@ -79,11 +83,11 @@
             </span>
           </b-col>
           <b-col>
-            <b-row>
+            <b-row class="flex-nowrap flex-lg-wrap overflow-auto">
               <b-col
                 v-for="practiceArea in allPracticeAreas"
                 :key="practiceArea.description"
-                class="d-flex flex-column justify-content-center align-items-center text-center mx-0 my-3 col-12 col-lg-4"
+                class="d-flex flex-column justify-content-center align-items-center text-center mx-0 my-5 my-lg-3 col-9 col-lg-4"
               >
                 <practice-area-card
                   :title="practiceArea.title"
@@ -106,11 +110,11 @@
     </section>
     <section id="lawyers">
       <b-container>
-        <b-row align-v="end">
+        <b-row cols="1" cols-lg="2" align-v="end">
           <b-col>
             <section-title
               heading="Our Lawyers"
-              subheading="Led by two of the most outstanding lawyers in the field"
+              subheading="Led by two of the most outstanding counsels counsels in the field"
               variant="secondary"
             ></section-title>
             <div id="aris-profile" class="my-4">
@@ -297,12 +301,22 @@ header,
 section,
 footer {
   padding: 100px 0;
+  @media (max-width: 992px) {
+    padding: 50px 0;
+  }
 }
 
 #header {
   background: url('~assets/images/gulapa-mtg-room_img.png');
+  // background-color: black;
   margin-top: -180px;
   padding-top: 280px;
+  padding-bottom: 80px;
+
+  @media (max-width: 992px) {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
 
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -328,17 +342,22 @@ footer {
 
 #featured {
   scroll-snap-align: start;
-  // transform: translateY(-50%);
   padding: 0;
   background: $primary;
 
   @media (max-width: 992px) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 
 #about {
   background: $primary;
+}
+
+#practice-areas .row,
+#practice-areas .row::-webkit-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 #projects {
