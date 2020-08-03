@@ -164,10 +164,12 @@
               </p>
               <b-row align-h="around">
                 <b-col>
-                  <i class="fas fa-envelope mx-3"></i>aris.gulapa@gulapalaw.com
+                  <i class="fas fa-envelope mx-3"></i
+                  ><span>aris.gulapa@gulapalaw.com</span>
                 </b-col>
                 <b-col>
-                  <i class="fas fa-phone"> </i>+6329602845 loc. 201</b-col
+                  <i class="fas fa-phone"> </i
+                  ><span>+6329602845 loc. 201</span></b-col
                 >
               </b-row>
             </div>
@@ -184,9 +186,12 @@
               <b-row align-h="around">
                 <b-col
                   ><i class="fas fa-envelope mx-3"></i
-                  >charms.haw@gulapalaw.com</b-col
+                  ><span>charms.haw@gulapalaw.com</span></b-col
                 >
-                <b-col><i class="fas fa-phone"> </i>+6329602845 loc. 208</b-col>
+                <b-col
+                  ><i class="fas fa-phone"> </i
+                  ><span>+6329602845 loc. 208</span></b-col
+                >
               </b-row>
             </div>
             <g-button variant="primary" :more="true" to="/lawyers"
@@ -367,7 +372,6 @@ footer {
 
 #header {
   background: url('~assets/images/gulapa-mtg-room_img1.png');
-  // background-color: black;
   margin-top: -180px;
   padding-top: 280px;
   padding-bottom: 80px;
@@ -447,6 +451,8 @@ footer {
 
 #lawyers {
   button.profile {
+    font-size: 24px;
+    font-weight: 600;
     text-transform: uppercase;
     color: $primary;
     border: none;
@@ -462,6 +468,9 @@ footer {
   i {
     font-size: 20.25px;
     color: $primary;
+  }
+  span {
+    font-size: 14px;
   }
 }
 
