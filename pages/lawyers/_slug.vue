@@ -1,6 +1,12 @@
 <template>
   <div>
-    <nuxt-content :document="info" />
+    <b-container>
+      <b-row>
+        <b-col>
+          <nuxt-content :document="info" class="m-5 p-5" />
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
