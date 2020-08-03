@@ -142,6 +142,9 @@ ol {
     .event {
       color: white;
       max-width: 18ch;
+      @media (max-width: 992px) {
+        max-width: 14ch;
+      }
     }
   }
 }
