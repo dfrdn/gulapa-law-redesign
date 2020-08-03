@@ -178,7 +178,7 @@
               subheading="Law is a complicated matter. Please fill out this quick form to help us help you."
               variant="secondary"
             ></section-title>
-            <b-row-form>
+            <b-form-row>
               <b-form-input class="my-2" placeholder="Name"></b-form-input>
               <b-form-input
                 class="my-2"
@@ -191,7 +191,7 @@
                 placeholder="Message"
               ></b-form-textarea>
               <g-button variant="primary">Submit</g-button>
-            </b-row-form>
+            </b-form-row>
           </b-col>
           <b-col cols="12" lg="4">
             <div id="contacts">
@@ -243,9 +243,9 @@ export default Vue.extend({
           description: 'Tax',
         },
         {
-          icon: require('~/assets/images/practice-areas/newyork.svg'),
-          title: 'Doing Business in New York',
-          description: 'Doing Business in New York',
+          icon: require('~/assets/images/practice-areas/asean.svg'),
+          title: 'ASEAN Trade',
+          description: 'ASEAN Trade',
         },
       ],
     }
