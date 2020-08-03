@@ -170,7 +170,7 @@
                   ><span>aris.gulapa@gulapalaw.com</span>
                 </b-col>
                 <b-col class="col-12 col-md">
-                  <i class="fas fa-phone"> </i
+                  <i class="fas fa-phone mx-3"> </i
                   ><span>+6329602845 loc. 201</span></b-col
                 >
               </b-row>
@@ -191,7 +191,7 @@
                   ><span>charms.haw@gulapalaw.com</span></b-col
                 >
                 <b-col class="col-12 col-md"
-                  ><i class="fas fa-phone"> </i
+                  ><i class="fas fa-phone mx-3"> </i
                   ><span>+6329602845 loc. 208</span></b-col
                 >
               </b-row>
