@@ -42,7 +42,7 @@
     <section id="about">
       <b-container>
         <b-row cols="1" cols-lg="2" align-v="start">
-          <b-col align-self="start">
+          <b-col align-self="start" class="d-flex flex-column">
             <section-title heading="Who We Are" subheading="blabla" />
             <section-details>
               Gulapa Law was established by Aris L. Gulapa in September 2015
@@ -58,7 +58,7 @@
               >
             </span>
           </b-col>
-          <b-col>
+          <b-col class="text-center">
             <img class="img-fluid" src="~/assets/images/who-we-are.png" alt />
           </b-col>
         </b-row>
@@ -72,7 +72,7 @@
     <section id="practice-areas">
       <b-container>
         <b-row align-v="center">
-          <b-col cols="12" lg="4">
+          <b-col cols="12" lg="4" class="d-flex flex-column">
             <section-title
               heading="What We Do"
               subheading="Our Practice Areas"
@@ -93,7 +93,7 @@
               <b-col
                 v-for="practiceArea in allPracticeAreas"
                 :key="practiceArea.description"
-                class="d-flex flex-column justify-content-center align-items-center text-center mx-0 my-5 my-lg-3 col-9 col-lg-4"
+                class="d-flex flex-column justify-content-center align-items-center text-center mx-0 my-5 my-lg-3 col-auto col-lg-4"
               >
                 <practice-area-card
                   :title="practiceArea.title"
@@ -144,7 +144,7 @@
     <section id="lawyers">
       <b-container>
         <b-row cols="1" cols-lg="2" align-v="end">
-          <b-col>
+          <b-col class="d-flex flex-column">
             <section-title
               heading="Our Lawyers"
               subheading="Led by two of the most outstanding counsels counsels in the field"
@@ -294,32 +294,38 @@ export default Vue.extend({
         {
           icon: require('~/assets/images/practice-areas/corporate.svg'),
           title: 'General Corporate',
-          description: 'General Corporate',
+          description:
+            'The firm and its lawyers have extensive experience in corporate...',
         },
         {
           icon: require('~/assets/images/practice-areas/structural.svg'),
           title: 'Infrastructure',
-          description: 'Infrastructure',
+          description:
+            'This is the firm’s main specialization. Although recently...',
         },
         {
           icon: require('~/assets/images/practice-areas/government.svg'),
           title: 'Government Contracts',
-          description: 'Government Contracts',
+          description:
+            'We regularly advise private entities and government agencies...',
         },
         {
           icon: require('~/assets/images/practice-areas/dispute.svg'),
           title: 'Dispute Resolution',
-          description: 'Dispute Resolution',
+          description:
+            'The firm’s lawyers have extensive and significant experience...',
         },
         {
           icon: require('~/assets/images/practice-areas/tax.svg'),
           title: 'Tax',
-          description: 'Tax',
+          description:
+            'The firm assists clients in achieving optimal tax structures...',
         },
         {
           icon: require('~/assets/images/practice-areas/asean.svg'),
           title: 'ASEAN Trade',
-          description: 'ASEAN Trade',
+          description:
+            'The firm regularly advises various companies from the Southeast...',
         },
       ],
     }
@@ -331,6 +337,14 @@ export default Vue.extend({
 #index-page {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  .col span,
+  .col .btn,
+  .flex-column span {
+    align-self: center;
+  }
 }
 
 header,
