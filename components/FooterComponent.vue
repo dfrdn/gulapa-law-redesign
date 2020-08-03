@@ -45,22 +45,22 @@
             <ul class="social-icons my-0">
               <li>
                 <a href="https://www.facebook.com/Gulapa-Law-Office-156580428029762">
-                  <img src="~/assets/images/social-icons/facebook.svg" alt="facebook" />
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/gulapa_law/">
-                  <img src="~/assets/images/social-icons/twitter.svg" alt="twitter" />
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/gulapa_law">
-                  <img src="~/assets/images/social-icons/instagram.svg" alt="instagram" />
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/company/7602818">
-                  <img src="~/assets/images/social-icons/linkedin.svg" alt="linkedin" />
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
@@ -105,8 +105,17 @@ export default Vue.extend({})
   color: $secondary;
 }
 
-.social-icons li {
-  display: inline;
-  margin-right: 20px;
+.social-icons {
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  a {
+    font-size: 31.5px;
+    color: $secondary;
+  }
+  a:hover {
+    color: $primary;
+  }
 }
 </style>
