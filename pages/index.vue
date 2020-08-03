@@ -58,7 +58,7 @@
               >
             </span>
           </b-col>
-          <b-col class="text-center">
+          <b-col class="text-center mt-4 mt-lg-0">
             <img class="img-fluid" src="~/assets/images/who-we-are.png" alt />
           </b-col>
         </b-row>

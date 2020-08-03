@@ -112,10 +112,4 @@ export default Vue.extend({
 })
 </script>
 
-<style>
-.practiceArea:hover p {
-  height: 120px;
-  text-overflow: ellipsis;
-  white-space: wrap;
-}
-</style>
+<style></style>
