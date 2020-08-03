@@ -3,13 +3,10 @@
     <b-container>
       <b-row>
         <b-col>
-          <section-title
-            heading="Why Choose Us"
-            class="d-lg-none"
-          ></section-title>
+          <section-title heading="Why Choose Us" class="d-lg-none"></section-title>
         </b-col>
       </b-row>
-      <b-row id="features" align-h="center">
+      <b-row id="features" align-h="center" class="px-4 px-lg-0">
         <b-col
           v-for="feature in features"
           :key="feature.heading"
@@ -19,17 +16,11 @@
         >
           <b-row align-v="center" class="py-4">
             <b-col cols="4" class="text-center">
-              <img
-                class="img-fluid"
-                :src="feature.icon"
-                :alt="feature.heading"
-              />
+              <img class="img-fluid" :src="feature.icon" :alt="feature.heading" />
             </b-col>
             <b-col>
               <h2>{{ feature.heading }}</h2>
-              <p>
-                {{ feature.description }}
-              </p>
+              <p>{{ feature.description }}</p>
             </b-col>
           </b-row>
         </b-col>
