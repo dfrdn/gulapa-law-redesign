@@ -35,8 +35,8 @@ p {
   font-family: $font-family-sans-serif;
 }
 
-$t-duration: 800ms;
-$t-delay: 300ms;
+$t-duration: 600ms;
+$t-delay: 200ms;
 
 .page-enter-active,
 .page-leave-active {
@@ -62,7 +62,7 @@ $t-delay: 300ms;
 
   &::after {
     top: 50%;
-    background-color: #2e2e2e;
+    background-color: $accent;
   }
 }
 
