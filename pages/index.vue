@@ -100,6 +100,7 @@
                   :description="practiceArea.description"
                   :icon="practiceArea.icon"
                   size="sm"
+                  :to="practiceArea.link"
                 ></practice-area-card>
               </b-col>
             </b-row>
@@ -298,36 +299,42 @@ export default Vue.extend({
           title: 'General Corporate',
           description:
             'The firm and its lawyers have extensive experience in corporate...',
+          link: '/practice-areas/corporate',
         },
         {
           icon: require('~/assets/images/practice-areas/structural.svg'),
           title: 'Infrastructure',
           description:
             'This is the firm’s main specialization. Although recently...',
+          link: '/practice-areas/infra',
         },
         {
           icon: require('~/assets/images/practice-areas/government.svg'),
           title: 'Government Contracts',
           description:
             'We regularly advise private entities and government agencies...',
+          link: '/practice-areas/gov',
         },
         {
           icon: require('~/assets/images/practice-areas/dispute.svg'),
           title: 'Dispute Resolution',
           description:
             'The firm’s lawyers have extensive and significant experience...',
+          link: '/practice-areas/dispute',
         },
         {
           icon: require('~/assets/images/practice-areas/tax.svg'),
           title: 'Tax',
           description:
             'The firm assists clients in achieving optimal tax structures...',
+          link: '/practice-areas/tax',
         },
         {
           icon: require('~/assets/images/practice-areas/asean.svg'),
           title: 'ASEAN Trade',
           description:
             'The firm regularly advises various companies from the Southeast...',
+          link: '/practice-areas/asean',
         },
       ],
     }

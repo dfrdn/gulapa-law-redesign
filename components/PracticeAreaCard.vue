@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/">
+  <nuxt-link :to="to">
     <div
       v-b-hover="handleHover"
       class="practiceArea d-flex flex-column align-items-center"
@@ -27,6 +27,7 @@ export default Vue.extend({
     description: { type: String, default: '' },
     title: { type: String, default: '' },
     size: { type: String, default: '' },
+    to: { type: String, default: '/' },
   },
   data() {
     return {
