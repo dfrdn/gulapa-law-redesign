@@ -16,8 +16,9 @@
         <b-row>
           <b-col class="text-center">
             <p class="mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              eligendi consectetur voluptatum, laborum ea harum quidem amet.
+              The firm's lawyers have extensive and significant experience in a
+              vast variety of legal fields including dispute resolution,
+              infrastructure projects, and government contracts.
             </p>
           </b-col>
         </b-row>
