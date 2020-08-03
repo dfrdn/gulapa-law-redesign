@@ -61,7 +61,9 @@
         <transition name="fade">
           <b-button
             class="d-none"
-            :class="[!isSticky && isHome ? 'd-lg-none' : 'd-lg-block']"
+            :class="[
+              (!isSticky && isHome) || isContact ? 'd-lg-none' : 'd-lg-block',
+            ]"
             variant="primary"
             to="/contact"
             >Consult Us</b-button
@@ -99,10 +101,10 @@ export default Vue.extend({
   },
   computed: {
     isHome() {
-      return (
-        this.$nuxt.$route.name === 'index' ||
-        this.$nuxt.$route.name === 'contact'
-      )
+      return this.$nuxt.$route.name === 'index'
+    },
+    isContact() {
+      return this.$nuxt.$route.name === 'contact'
     },
   },
   beforeMount() {
