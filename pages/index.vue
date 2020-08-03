@@ -44,7 +44,10 @@
       <b-container>
         <b-row cols="1" cols-lg="2" align-v="start">
           <b-col align-self="start" class="d-flex flex-column">
-            <section-title heading="Who We Are" subheading="blabla" />
+            <section-title
+              heading="Who We Are"
+              subheading="We are here to help you with your legal needs"
+            />
             <section-details>
               Gulapa Law was established by Aris L. Gulapa in September 2015
               after he left a Makati-based firm where he was a partner for four
@@ -157,16 +160,17 @@
                 <button class="profile px-3 py-2 my-3">Aris L. Gulapa</button>
               </nuxt-link>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-                facilis nesciunt porro nihil! Alias itaque et libero corporis
-                neque nihil nulla perferendis laboriosam consectetur? A ipsa
-                veniam corrupti eius illo.
+                After accumulating a wealth of experience from his legal
+                practice in Manila, Vietnam, Singapore, Tokyo and New York, Aris
+                set up Gulapa Law.
               </p>
               <b-row align-h="around">
                 <b-col>
                   <i class="fas fa-envelope mx-3"></i>aris.gulapa@gulapalaw.com
                 </b-col>
-                <b-col> <i class="fas fa-phone"></i>numbernumber </b-col>
+                <b-col>
+                  <i class="fas fa-phone"> </i>+6329602845 loc. 201</b-col
+                >
               </b-row>
             </div>
             <div id="charms-profile" class="my-4">
@@ -174,14 +178,17 @@
                 <button class="profile px-3 py-2 my-3">Charmaine Haw</button>
               </nuxt-link>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-                facilis nesciunt porro nihil! Alias itaque et libero corporis
-                neque nihil nulla perferendis laboriosam consectetur? A ipsa
-                veniam corrupti eius illo.
+                Charms is a partner at the firm. She served as consultant to the
+                Asian Development Bank under its Office of General Counsel –
+                Sovereign and Non-sovereign Operations before she became part of
+                Gulapa Law.
               </p>
               <b-row align-h="around">
-                <b-col>charms.haw@gulapalaw.com</b-col>
-                <b-col>numbernumber</b-col>
+                <b-col
+                  ><i class="fas fa-envelope mx-3"></i
+                  >charms.haw@gulapalaw.com</b-col
+                >
+                <b-col><i class="fas fa-phone"> </i>+6329602845 loc. 208</b-col>
               </b-row>
             </div>
             <g-button variant="primary" :more="true" to="/lawyers"
@@ -205,7 +212,7 @@
         <b-row class="justify-content-center">
           <h2>Gains and Recognitions</h2>
         </b-row>
-        <b-row cols="1" cols-md="2" cols-lg="3">
+        <b-row cols="1" cols-md="2" cols-lg="3" class="justify-content-center">
           <b-col>
             <div
               class="award text-center d-flex flex-column align-items-center"
@@ -367,7 +374,7 @@ footer {
 }
 
 #header {
-  background: url('~assets/images/gulapa-mtg-room_img.png');
+  background: url('~assets/images/gulapa-mtg-room_img1.png');
   // background-color: black;
   margin-top: -180px;
   padding-top: 280px;
@@ -458,6 +465,11 @@ footer {
       0%;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 10px;
+  }
+
+  i {
+    font-size: 20.25px;
+    color: $primary;
   }
 }
 
