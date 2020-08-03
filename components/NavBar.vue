@@ -129,6 +129,9 @@ export default Vue.extend({
 <style lang="scss" scoped>
 #header {
   height: 150px;
+  @media (max-width: 992px) {
+    height: 80px;
+  }
 }
 
 .navbar-nav {
