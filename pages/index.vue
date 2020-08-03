@@ -47,9 +47,7 @@
               ‎(2003-2006).
             </section-details>
             <span class="pl-lg-5">
-              <g-button variant="accent" :more="true" to="/about"
-                >Learn More</g-button
-              >
+              <g-button variant="accent" :more="true" to="/about">Learn More</g-button>
             </span>
           </b-col>
           <b-col>
@@ -77,9 +75,7 @@
               varieties of practice areas.
             </section-details>
             <span class="pl-lg-5">
-              <g-button variant="primary" :more="true" to="/practice-areas"
-                >See all practice areas</g-button
-              >
+              <g-button variant="primary" :more="true" to="/practice-areas">See all practice areas</g-button>
             </span>
           </b-col>
           <b-col>
@@ -118,11 +114,9 @@
               variant="secondary"
             ></section-title>
             <div id="aris-profile" class="my-4">
-              <nuxt-link to="/"
-                ><button class="profile px-3 py-2 my-3">
-                  Aris L. Gulapa
-                </button></nuxt-link
-              >
+              <nuxt-link to="/">
+                <button class="profile px-3 py-2 my-3">Aris L. Gulapa</button>
+              </nuxt-link>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
                 facilis nesciunt porro nihil! Alias itaque et libero corporis
@@ -130,19 +124,18 @@
                 veniam corrupti eius illo.
               </p>
               <b-row align-h="around">
-                <b-col
-                  ><i class="fas fa-envelope mx-3"></i
-                  >aris.gulapa@gulapalaw.com</b-col
-                >
-                <b-col><i class="fas fa-phone"></i>numbernumber</b-col>
+                <b-col>
+                  <i class="fas fa-envelope mx-3"></i>aris.gulapa@gulapalaw.com
+                </b-col>
+                <b-col>
+                  <i class="fas fa-phone"></i>numbernumber
+                </b-col>
               </b-row>
             </div>
             <div id="charms-profile" class="my-4">
-              <nuxt-link to="/"
-                ><button class="profile px-3 py-2 my-3">
-                  Charmaine Haw
-                </button></nuxt-link
-              >
+              <nuxt-link to="/">
+                <button class="profile px-3 py-2 my-3">Charmaine Haw</button>
+              </nuxt-link>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
                 facilis nesciunt porro nihil! Alias itaque et libero corporis
@@ -154,9 +147,7 @@
                 <b-col>numbernumber</b-col>
               </b-row>
             </div>
-            <g-button variant="primary" :more="true" to="/lawyers"
-              >See all our lawyers</g-button
-            >
+            <g-button variant="primary" :more="true" to="/lawyers">See all our lawyers</g-button>
           </b-col>
           <b-col>
             <img
@@ -168,7 +159,54 @@
         </b-row>
       </b-container>
     </section>
-    <section id="awards">awards</section>
+    <section id="awards">
+      <b-container>
+        <b-row class="justify-content-center">
+          <h2>Gains and Recognitions</h2>
+        </b-row>
+        <b-row cols="1" cols-md="2" cols-lg="3">
+          <b-col>
+            <div class="award text-center d-flex flex-column align-items-center">
+              <img src="~/assets/images/award-home.svg" alt="awards" />
+              <h3>
+                RISING LAW FIRM
+                <br />OF THE YEAR (WINNER)
+              </h3>
+              <h3>2018</h3>
+              <p>
+                Asian Legal Business
+                <br />Philippine Law Awards
+              </p>
+            </div>
+          </b-col>
+          <b-col>
+            <div class="award text-center d-flex flex-column align-items-center">
+              <img src="~/assets/images/award-home.svg" alt="awards" />
+              <h3>TOP 100 LAWYERS IN THE PHILIPPINES, ARIS L. GULAPA</h3>
+              <h3>2018</h3>
+              <p>
+                Asian Business
+                <br />Law Journal
+              </p>
+            </div>
+          </b-col>
+          <b-col>
+            <div class="award text-center d-flex flex-column align-items-center">
+              <img src="~/assets/images/award-home.svg" alt="awards" />
+              <h3>REAL ESTATE & CONSTRUCTION (TIER 1)</h3>
+              <h3>2018</h3>
+              <p>
+                The
+                <br />Legal500
+              </p>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row class="justify-content-center">
+          <g-button variant="accent" :more="true" to="/awards">See all Gains and Recognitions</g-button>
+        </b-row>
+      </b-container>
+    </section>
     <section id="contact-us">
       <b-container>
         <b-row>
@@ -180,24 +218,20 @@
             ></section-title>
             <b-form-row>
               <b-form-input class="my-2" placeholder="Name"></b-form-input>
-              <b-form-input
-                class="my-2"
-                placeholder="Email Address"
-              ></b-form-input>
-              <b-form-textarea
-                no-resize=""
-                class="my-2"
-                rows="4"
-                placeholder="Message"
-              ></b-form-textarea>
+              <b-form-input class="my-2" placeholder="Email Address"></b-form-input>
+              <b-form-textarea no-resize class="my-2" rows="4" placeholder="Message"></b-form-textarea>
               <g-button variant="primary">Submit</g-button>
             </b-form-row>
           </b-col>
           <b-col cols="12" lg="4">
             <div id="contacts">
               <h4>Connect with us</h4>
-              <p><i class="fas fa-envelope mx-2"></i>glaw@gulapalaw.com</p>
-              <p><i class="fas fa-phone mx-2"></i>+632 7960 2845 to 47</p>
+              <p>
+                <i class="fas fa-envelope mx-2"></i>glaw@gulapalaw.com
+              </p>
+              <p>
+                <i class="fas fa-phone mx-2"></i>+632 7960 2845 to 47
+              </p>
             </div>
             <div id="address">
               <h4>Manila Address</h4>
@@ -328,5 +362,33 @@ footer {
 
 #awards {
   background: $primary;
+  .btn {
+    margin-top: 80px;
+  }
+  h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .award {
+    margin-top: 100px;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 110px;
+    }
+    h3 {
+      width: 100%;
+      max-width: 265px;
+      font-size: 24px;
+      font-weight: 600;
+      color: $accent;
+    }
+    p {
+      margin-top: 30px;
+      color: white;
+    }
+  }
 }
 </style>
