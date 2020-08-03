@@ -23,8 +23,10 @@
         </b-row>
         <b-row>
           <b-col class="text-center">
-            <g-button variant="primary" href="/contact">Consult Us</g-button>
-            <b-button variant="outline-primary" href="#about">Learn More</b-button>
+            <g-button variant="primary" to="/contact">Consult Us</g-button>
+            <b-button variant="outline-primary" href="#about"
+              >Learn More</b-button
+            >
           </b-col>
         </b-row>
         <b-row>
@@ -51,7 +53,9 @@
               ‎(2003-2006).
             </section-details>
             <span class="pl-lg-5">
-              <g-button variant="accent" :more="true" to="/about">Learn More</g-button>
+              <g-button variant="accent" :more="true" to="/about"
+                >Learn More</g-button
+              >
             </span>
           </b-col>
           <b-col>
@@ -79,7 +83,9 @@
               varieties of practice areas.
             </section-details>
             <span class="pl-lg-5">
-              <g-button variant="primary" :more="true" to="/practice-areas">See all practice areas</g-button>
+              <g-button variant="primary" :more="true" to="/practice-areas"
+                >See all practice areas</g-button
+              >
             </span>
           </b-col>
           <b-col>
@@ -108,15 +114,27 @@
         </b-row>
         <b-row class="px-4 text-center">
           <b-card-group deck>
-            <b-card img-src="~/assets/images/lrt.jpg" img-alt="Card image" img-top>
+            <b-card
+              img-src="~/assets/images/lrt.jpg"
+              img-alt="Card image"
+              img-top
+            >
               <b-card-title>LRT 6 Project</b-card-title>
             </b-card>
 
-            <b-card img-src="~/assets/images/clark-airport.jpg" img-alt="Card image" img-top>
+            <b-card
+              img-src="~/assets/images/clark-airport.jpg"
+              img-alt="Card image"
+              img-top
+            >
               <b-card-title>Clark Airport</b-card-title>
             </b-card>
 
-            <b-card img-src="~/assets/images/naia.jpg" img-alt="Card image" img-top>
+            <b-card
+              img-src="~/assets/images/naia.jpg"
+              img-alt="Card image"
+              img-top
+            >
               <b-card-title>NAIA Expansion</b-card-title>
             </b-card>
           </b-card-group>
@@ -146,9 +164,7 @@
                 <b-col>
                   <i class="fas fa-envelope mx-3"></i>aris.gulapa@gulapalaw.com
                 </b-col>
-                <b-col>
-                  <i class="fas fa-phone"></i>numbernumber
-                </b-col>
+                <b-col> <i class="fas fa-phone"></i>numbernumber </b-col>
               </b-row>
             </div>
             <div id="charms-profile" class="my-4">
@@ -166,7 +182,9 @@
                 <b-col>numbernumber</b-col>
               </b-row>
             </div>
-            <g-button variant="primary" :more="true" to="/lawyers">See all our lawyers</g-button>
+            <g-button variant="primary" :more="true" to="/lawyers"
+              >See all our lawyers</g-button
+            >
           </b-col>
           <b-col>
             <img
@@ -185,7 +203,9 @@
         </b-row>
         <b-row cols="1" cols-md="2" cols-lg="3">
           <b-col>
-            <div class="award text-center d-flex flex-column align-items-center">
+            <div
+              class="award text-center d-flex flex-column align-items-center"
+            >
               <img src="~/assets/images/award-home.svg" alt="awards" />
               <h3>
                 RISING LAW FIRM
@@ -199,7 +219,9 @@
             </div>
           </b-col>
           <b-col>
-            <div class="award text-center d-flex flex-column align-items-center">
+            <div
+              class="award text-center d-flex flex-column align-items-center"
+            >
               <img src="~/assets/images/award-home.svg" alt="awards" />
               <h3>TOP 100 LAWYERS IN THE PHILIPPINES, ARIS L. GULAPA</h3>
               <h3>2018</h3>
@@ -210,7 +232,9 @@
             </div>
           </b-col>
           <b-col>
-            <div class="award text-center d-flex flex-column align-items-center">
+            <div
+              class="award text-center d-flex flex-column align-items-center"
+            >
               <img src="~/assets/images/award-home.svg" alt="awards" />
               <h3>REAL ESTATE & CONSTRUCTION (TIER 1)</h3>
               <h3>2018</h3>
@@ -222,7 +246,9 @@
           </b-col>
         </b-row>
         <b-row class="justify-content-center">
-          <g-button variant="accent" :more="true" to="/awards">See all Gains and Recognitions</g-button>
+          <g-button variant="accent" :more="true" to="/awards"
+            >See all Gains and Recognitions</g-button
+          >
         </b-row>
       </b-container>
     </section>
@@ -235,12 +261,20 @@
             variant="secondary"
           ></section-title>
         </b-row>
-        <b-row>
-          <b-col>
+        <b-row align-h="center" class="my-lg-3">
+          <b-col cols="12" lg="8">
             <b-form-row class="mx-auto justify-content-center">
               <b-form-input class="my-2" placeholder="Name"></b-form-input>
-              <b-form-input class="my-2" placeholder="Email Address"></b-form-input>
-              <b-form-textarea no-resize class="my-2" rows="4" placeholder="Message"></b-form-textarea>
+              <b-form-input
+                class="my-2"
+                placeholder="Email Address"
+              ></b-form-input>
+              <b-form-textarea
+                no-resize
+                class="my-2"
+                rows="4"
+                placeholder="Message"
+              ></b-form-textarea>
               <g-button variant="primary">Submit</g-button>
             </b-form-row>
           </b-col>
@@ -316,7 +350,7 @@ footer {
   padding-bottom: 80px;
 
   @media (max-width: 992px) {
-    padding-top: 120px;
+    padding-top: 180px;
     padding-bottom: 0;
   }
 
