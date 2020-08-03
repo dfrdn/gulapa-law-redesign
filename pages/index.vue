@@ -460,7 +460,7 @@ footer {
 #lawyers {
   button.profile {
     font-size: 24px;
-    font-weight: 600;
+    // font-weight: 600;
     text-transform: uppercase;
     color: $primary;
     border: none;
