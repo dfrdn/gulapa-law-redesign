@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div id="index-page">
     <header id="header">
       <b-container fluid>
         <b-row align-h="center" align-v="center">
@@ -19,7 +19,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
               eligendi consectetur voluptatum, laborum ea harum quidem amet.
             </p>
-            <g-button variant="primary">Consult Now</g-button>
+            <g-button variant="primary">Consult Us</g-button>
             <button class="btn btn-outline-primary">Learn More</button>
           </b-col>
         </b-row>
@@ -47,7 +47,9 @@
               ‎(2003-2006).
             </section-details>
             <span class="pl-lg-5">
-              <g-button variant="accent" :more="true">Learn More</g-button>
+              <g-button variant="accent" :more="true" to="/about"
+                >Learn More</g-button
+              >
             </span>
           </b-col>
           <b-col>
@@ -75,7 +77,7 @@
               varieties of practice areas.
             </section-details>
             <span class="pl-lg-5">
-              <g-button variant="primary" :more="true"
+              <g-button variant="primary" :more="true" to="/practice-areas"
                 >See all practice areas</g-button
               >
             </span>
@@ -152,7 +154,7 @@
                 <b-col>numbernumber</b-col>
               </b-row>
             </div>
-            <g-button variant="primary" :more="true"
+            <g-button variant="primary" :more="true" to="/lawyers"
               >See all our lawyers</g-button
             >
           </b-col>
@@ -252,7 +254,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-#page {
+#index-page {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }

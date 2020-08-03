@@ -3,14 +3,14 @@
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
 
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.3s ease-in-out;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
+// .page-enter-active,
+// .page-leave-active {
+//   transition: opacity 0.3s ease-in-out;
+// }
+// .page-enter,
+// .page-leave-to {
+//   opacity: 0;
+// }
 
 h1,
 h2,
