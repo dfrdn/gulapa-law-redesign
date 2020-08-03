@@ -103,8 +103,23 @@
     </section>
     <section id="projects">
       <b-container>
-        <b-row>
-          <b-row>Projects</b-row>
+        <b-row class="justify-content-center">
+          <h2>Notable Projects</h2>
+        </b-row>
+        <b-row class="px-4 text-center">
+          <b-card-group deck>
+            <b-card img-src="~/assets/images/lrt.jpg" img-alt="Card image" img-top>
+              <b-card-title>LRT 6 Project</b-card-title>
+            </b-card>
+
+            <b-card img-src="~/assets/images/clark-airport.jpg" img-alt="Card image" img-top>
+              <b-card-title>Clark Airport</b-card-title>
+            </b-card>
+
+            <b-card img-src="~/assets/images/naia.jpg" img-alt="Card image" img-top>
+              <b-card-title>NAIA Expansion</b-card-title>
+            </b-card>
+          </b-card-group>
         </b-row>
       </b-container>
     </section>
@@ -362,6 +377,25 @@ footer {
 
 #projects {
   background: $primary;
+  h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .card {
+    margin-top: 60px;
+    border-color: $accent;
+  }
 }
 
 #lawyers {
