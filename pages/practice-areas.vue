@@ -3,6 +3,15 @@
     <!-- <PracticeAreaCards /> -->
     <b-container>
       <b-row>
+        <b-col class="d-flex flex-column">
+          <PageTitle
+            heading="Our Practice Areas"
+            subheading="Different Clients, Different Needs"
+            variant="secondary"
+          />
+        </b-col>
+      </b-row>
+      <b-row>
         <b-col
           v-for="practiceArea in allPracticeAreas"
           :key="practiceArea.description"

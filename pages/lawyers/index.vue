@@ -1,14 +1,18 @@
 <template>
   <section id="lawyers">
     <b-container fluid="lg">
+      <b-row>
+        <b-col class="d-flex flex-column">
+          <PageTitle
+            heading="Our Team"
+            subheading="Brilliant and Prestigious Lawyers"
+            variant="secondary"
+          />
+        </b-col>
+      </b-row>
       <b-row cols="1" cols-md="3" cols-lg="4" align-h="center" align-v="stetch">
         <b-col v-for="lawyer in lawyers" :key="lawyer.name">
-          <lawyer-card
-            :image="lawyer.img"
-            :name="lawyer.name"
-            :email="lawyer.email"
-          >
-          </lawyer-card>
+          <lawyer-card :image="lawyer.img" :name="lawyer.name" :email="lawyer.email"></lawyer-card>
         </b-col>
       </b-row>
     </b-container>
