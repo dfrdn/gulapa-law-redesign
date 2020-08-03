@@ -3,12 +3,7 @@
     <b-container class="d-none d-lg-block my-3">
       <b-row>
         <b-col class="text-center">
-          <img
-            id="logo-text"
-            src="~assets/images/logo-text.png"
-            alt="logo"
-            height="76px"
-          />
+          <img id="logo-text" src="~assets/images/logo-text.png" alt="logo" height="76px" />
         </b-col>
       </b-row>
     </b-container>
@@ -20,24 +15,11 @@
     >
       <b-container>
         <transition name="fade">
-          <b-navbar-brand
-            class="order-1 order-lg-0"
-            :class="{ 'd-lg-none': !isSticky }"
-            to="/"
-          >
-            <img
-              id="logo-figure"
-              src="~assets/images/logo-figure.png"
-              alt="logo"
-              height="40px"
-            />
+          <b-navbar-brand class="order-1 order-lg-0" :class="{ 'd-lg-none': !isSticky }" to="/">
+            <img id="logo-figure" src="~assets/images/logo-figure.png" alt="logo" height="40px" />
           </b-navbar-brand>
         </transition>
-        <b-navbar-toggle
-          class="order-0 order-lg-1"
-          type="button"
-          target="nav-collapse"
-        >
+        <b-navbar-toggle class="order-0 order-lg-1" type="button" target="nav-collapse">
           <!-- <span class="navbar-toggler-icon"></span> -->
         </b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav class="order-2 order-lg-0">
@@ -45,17 +27,14 @@
             class="justify-content-around px-5 order-2"
             :class="{ 'flex-lg-grow-1': !isSticky }"
           >
-            <nuxt-link v-if="!isSticky" class="nav-item nav-link mx-3" to="/"
-              >G-Law</nuxt-link
-            >
+            <nuxt-link v-if="!isSticky" class="nav-item nav-link mx-3" to="/">G-Law</nuxt-link>
 
             <nuxt-link
               v-for="link in stickyLinks"
               :key="link.label"
               class="nav-item nav-link mx-3"
               :to="link.link"
-              >{{ link.label }}</nuxt-link
-            >
+            >{{ link.label }}</nuxt-link>
           </b-navbar-nav>
         </b-collapse>
         <transition name="fade">
@@ -63,8 +42,8 @@
             class="d-none"
             :class="[!isSticky && isHome ? 'd-lg-none' : 'd-lg-block']"
             variant="primary"
-            >Consult Us</b-button
-          >
+            href="/contact"
+          >Consult Us</b-button>
         </transition>
       </b-container>
     </b-navbar>

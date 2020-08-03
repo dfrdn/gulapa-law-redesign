@@ -23,7 +23,7 @@
         </b-row>
         <b-row>
           <b-col class="text-center">
-            <g-button variant="primary">Consult Us</g-button>
+            <g-button variant="primary" href="/contact">Consult Us</g-button>
             <b-button variant="outline-primary" href="#about">Learn More</b-button>
           </b-col>
         </b-row>
@@ -435,7 +435,7 @@ footer {
 #contact-us {
   .form-row {
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     .btn {
       width: 100%;
     }
