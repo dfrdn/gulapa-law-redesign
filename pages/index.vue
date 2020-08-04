@@ -117,7 +117,7 @@
         <b-row class="justify-content-center">
           <h2>Notable Projects</h2>
         </b-row>
-        <b-row class="px-4 text-center">
+        <b-row align-h="center" class="px-4 text-center">
           <b-card-group deck>
             <b-card
               img-src="~/assets/images/lrt.jpg"
