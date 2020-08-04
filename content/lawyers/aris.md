@@ -2,6 +2,7 @@
 name: Aris L. Gulapa
 email: aris.gulapa@gulapalaw.com
 tel: +6329602845 loc. 201
+position: Founding Partner
 order: 1
 ---
 
