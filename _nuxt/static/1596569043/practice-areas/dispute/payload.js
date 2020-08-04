@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/practice-areas/dispute", {data:[{info:{toc:[],body:{type:"root",children:[]},dir:"\u002Fpractice-areas",path:"\u002Fpractice-areas\u002Fdispute",extension:".md",slug:"dispute",createdAt:"2020-08-03T11:22:31.950Z",updatedAt:"2020-08-03T11:22:31.000Z"}}],fetch:[],mutations:void 0});

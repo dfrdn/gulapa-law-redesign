@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/practice-areas/tax", {data:[{info:{toc:[],body:{type:"root",children:[]},dir:"\u002Fpractice-areas",path:"\u002Fpractice-areas\u002Ftax",extension:".md",slug:"tax",createdAt:"2020-08-03T11:22:31.952Z",updatedAt:"2020-08-03T11:22:31.000Z"}}],fetch:[],mutations:void 0});
