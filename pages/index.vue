@@ -152,7 +152,7 @@
           <b-col class="d-flex flex-column">
             <section-title
               heading="Our Lawyers"
-              subheading="Led by two of the most outstanding counsels counsels in the field"
+              subheading="Led by two of the most outstanding counsels in the field"
               variant="secondary"
             ></section-title>
             <div id="aris-profile" class="my-4">
