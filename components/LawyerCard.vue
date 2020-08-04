@@ -1,6 +1,6 @@
 <template>
   <div class="my-3">
-    <nuxt-link to="/">
+    <nuxt-link :to="to">
       <b-card
         class="justify-content-between"
         img-top
@@ -19,6 +19,7 @@ export default Vue.extend({
     image: { type: String, default: '' },
     name: { type: String, default: '' },
     email: { type: String, default: '' },
+    to: { type: String, default: '/' },
   },
   data() {
     return {
