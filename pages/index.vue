@@ -165,12 +165,12 @@
                 set up Gulapa Law.
               </p>
               <b-row align-h="around">
-                <b-col>
+                <b-col class="col-12 col-md">
                   <i class="fas fa-envelope mx-3"></i
                   ><span>aris.gulapa@gulapalaw.com</span>
                 </b-col>
-                <b-col>
-                  <i class="fas fa-phone"> </i
+                <b-col class="col-12 col-md">
+                  <i class="fas fa-phone mx-3"> </i
                   ><span>+6329602845 loc. 201</span></b-col
                 >
               </b-row>
@@ -186,12 +186,12 @@
                 Gulapa Law.
               </p>
               <b-row align-h="around">
-                <b-col
+                <b-col class="col-12 col-md"
                   ><i class="fas fa-envelope mx-3"></i
                   ><span>charms.haw@gulapalaw.com</span></b-col
                 >
-                <b-col
-                  ><i class="fas fa-phone"> </i
+                <b-col class="col-12 col-md"
+                  ><i class="fas fa-phone mx-3"> </i
                   ><span>+6329602845 loc. 208</span></b-col
                 >
               </b-row>
@@ -214,7 +214,7 @@
     </section>
     <section id="awards">
       <b-container>
-        <b-row class="justify-content-center">
+        <b-row class="justify-content-center text-center">
           <h2>Gains and Recognitions</h2>
         </b-row>
         <b-row cols="1" cols-md="2" cols-lg="3" class="justify-content-center">
