@@ -66,7 +66,7 @@
             <img class="img-fluid" src="~/assets/images/who-we-are.png" alt />
           </b-col>
         </b-row>
-        <b-row>
+        <b-row align-h="center">
           <b-col class="d-flex justify-content-center mt-5">
             <timeline />
           </b-col>
@@ -382,7 +382,7 @@ footer {
   background: url('~assets/images/gulapa-mtg-room_img1.png');
   margin-top: -180px;
   padding-top: 280px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 
   @media (max-width: 992px) {
     padding-top: 180px;
