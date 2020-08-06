@@ -9,9 +9,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
-  router: {
-    base: '/gulapa-law-redesign/', // for github pages
-  },
+  // router: {
+  //   base: '/gulapa-law-redesign/', // for github pages
+  // },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
