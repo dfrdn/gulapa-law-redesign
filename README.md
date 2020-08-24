@@ -1,5 +1,9 @@
 # gulapa-law-redesign
 
+## Description
+
+A redesign of [Gulapa Law Website](https://gulapalaw.com) using VueJS and Nuxt framework. It utilizes Nuxt Content for content management.
+
 ## Build Setup
 
 ```bash
