@@ -1,9 +1,14 @@
 <template>
   <div>
     <b-container>
-      <b-row>
-        <b-col>
-          <nuxt-content :document="info" class="m-5 p-5" />
+      <b-row class="p-3 p-lg-5 align-items-start">
+        <b-col class="d-flex flex-column align-items-center">
+          <h1 class="text-center p-0 mb-3">{{ info.title }}</h1>
+          <img :src="getImage(info.slug)" :alt="`${info.slug} image`" class="img-fluid my-3" />
+          <nuxt-content :document="info" />
+        </b-col>
+        <b-col id="list" cols="4" class="p-5">
+          <practice-areas-list :practiceAreas="allPracticeAreas" :active="info.title"></practice-areas-list>
         </b-col>
       </b-row>
     </b-container>
@@ -18,9 +23,31 @@ export default Vue.extend({
     const info = await $content(
       `practice-areas/${params.slug}` || 'index'
     ).fetch()
-    return { info }
+
+    const allPracticeAreas = await $content('practice-areas')
+      .only(['title', 'slug'])
+      .fetch()
+    return { info, allPracticeAreas }
+  },
+  methods: {
+    getImage(filename: String) {
+      return require(`@/assets/images/practice-areas/${filename}.svg`)
+    },
+  },
+  transition(to, from) {
+    if (to.name === from.name) return 'none'
+    else return 'page'
   },
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.nuxt-content-container {
+  max-width: 800px;
+}
+
+#list {
+  position: sticky;
+  top: 10%;
+}
+</style>

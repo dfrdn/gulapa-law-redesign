@@ -10,13 +10,7 @@
           />
         </b-col>
       </b-row>
-      <b-row
-        cols="1"
-        cols-md="3"
-        cols-lg="4"
-        align-h="center"
-        align-v="stretch"
-      >
+      <b-row cols="1" cols-md="3" cols-lg="4" align-h="center" align-v="stretch">
         <b-col v-for="lawyer in lawyers" :key="lawyer.name">
           <lawyer-card
             :image="getImage(lawyer.slug)"
