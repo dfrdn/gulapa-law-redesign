@@ -96,9 +96,9 @@
                 <practice-area-card
                   :title="practiceArea.title"
                   :description="practiceArea.description"
-                  :icon="practiceArea.icon"
+                  :icon="getImage(practiceArea.slug)"
                   size="sm"
-                  :to="practiceArea.link"
+                  :to="`/practice-areas/${practiceArea.slug}`"
                 ></practice-area-card>
               </b-col>
             </b-row>
@@ -268,53 +268,19 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data() {
-    return {
-      allPracticeAreas: [
-        {
-          icon: require('~/assets/images/practice-areas/corporate.svg'),
-          title: 'General Corporate',
-          description:
-            'The firm and its lawyers have extensive experience in corporate...',
-          link: '/practice-areas/corporate',
-        },
-        {
-          icon: require('~/assets/images/practice-areas/infra.svg'),
-          title: 'Infrastructure',
-          description:
-            'This is the firm’s main specialization. Although recently...',
-          link: '/practice-areas/infra',
-        },
-        {
-          icon: require('~/assets/images/practice-areas/government.svg'),
-          title: 'Government Contracts',
-          description:
-            'We regularly advise private entities and government agencies...',
-          link: '/practice-areas/gov',
-        },
-        {
-          icon: require('~/assets/images/practice-areas/dispute.svg'),
-          title: 'Dispute Resolution',
-          description:
-            'The firm’s lawyers have extensive and significant experience...',
-          link: '/practice-areas/dispute',
-        },
-        {
-          icon: require('~/assets/images/practice-areas/tax.svg'),
-          title: 'Tax',
-          description:
-            'The firm assists clients in achieving optimal tax structures...',
-          link: '/practice-areas/tax',
-        },
-        {
-          icon: require('~/assets/images/practice-areas/asean.svg'),
-          title: 'ASEAN Trade',
-          description:
-            'The firm regularly advises various companies from the Southeast...',
-          link: '/practice-areas/asean',
-        },
-      ],
-    }
+  async asyncData({ $content }) {
+    const allPracticeAreas: {
+      [key: string]: string | number
+    }[] = await $content('practice-areas' || 'index').fetch()
+    allPracticeAreas
+      .sort((a, b) => (a.order as number) - (b.order as number))
+      .splice(6, allPracticeAreas.length)
+    return { allPracticeAreas }
+  },
+  methods: {
+    getImage(filename: String) {
+      return require(`@/assets/images/practice-areas/${filename}.svg`)
+    },
   },
 })
 </script>

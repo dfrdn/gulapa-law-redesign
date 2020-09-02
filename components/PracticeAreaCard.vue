@@ -44,7 +44,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .practiceArea {
-  padding-top: 50px;
+  padding-top: 20px;
   width: 280px;
   height: 280px;
   border-radius: 10px;
@@ -71,6 +71,7 @@ export default Vue.extend({
     p {
       color: white;
       overflow: hidden;
+      font-size: 14px;
       max-width: 20ch;
     }
 

@@ -8,7 +8,7 @@
           <nuxt-content :document="info" />
         </b-col>
         <b-col id="list" cols="4" class="p-5">
-          <practice-areas-list :practiceAreas="allPracticeAreas" :active="info.title"></practice-areas-list>
+          <practice-area-list :allPracticeAreas="allPracticeAreas" :active="info.title"></practice-area-list>
         </b-col>
       </b-row>
     </b-container>
@@ -33,10 +33,6 @@ export default Vue.extend({
     getImage(filename: String) {
       return require(`@/assets/images/practice-areas/${filename}.svg`)
     },
-  },
-  transition(to, from) {
-    if (to.name === from.name) return 'none'
-    else return 'page'
   },
 })
 </script>
